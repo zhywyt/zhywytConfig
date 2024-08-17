@@ -99,7 +99,7 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
-alias ll="ls -alh"
+#alias ll="ls -alh"
 alias gs="git status"
 alias df="df -h"
 
