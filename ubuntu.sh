@@ -1,7 +1,7 @@
 cp ~/.bashrc ~/.bashrc.back
 cp /etc/ssh/ssh_config /etc/ssh/ssh_config.back
 cp /etc/vim/vimrc /etc/vim/vimrc.back
-cp ~/.ssh/id_rsa.pub ~/.ssh/id_rsa.pub.back
+cp ~/.ssh/id_rsa.pub ~/.ssh/id_rsa_pub.back
 
 rm ~/.bashrc 
 rm /etc/ssh/ssh_config
