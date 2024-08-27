@@ -99,7 +99,21 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
-#alias ll="ls -alh"
+
+## proxy setting
+## For wget
+# export http_proxy="http://10.10.10.100:7890/"
+# export https_proxy="http://10.10.10.100:7890/"
+# export ftp_proxy="http://10.10.10.100:7890/"
+## no_proxy is the ip without proxy
+# export no_proxy="127.0.0.1,localhost,192.168.3.1/24,192.168.1.1/24"
+## For curl 
+# export HTTP_PROPXY="http://10.10.10.100:7890/"
+# export HTTPS_PROXY="http://10.10.10.100:7890/"
+# export FTP_PROXY="http://10.10.10.100:7890/"
+# export NO_PROXY="127.0.0.1,localhost,192.168.3.1/24,192.168.1.1/24"
+
+alias ll="ls -alh"
 alias gs="git status"
 alias df="df -h"
 
