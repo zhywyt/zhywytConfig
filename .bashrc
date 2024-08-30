@@ -2,8 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 export QT_QPA_PLATFORM=offscreen
-export https_proxy=http://10.10.10.100:7890
-PATH=$PATH:/usr/local/cuda-12.2/bin
+#export https_proxy=http://10.10.10.100:7890
+#PATH=$PATH:/usr/local/cuda-12.2/bin
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -38,7 +38,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -83,6 +83,8 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias gs="git status"
+alias df="df -h"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -113,7 +115,4 @@ fi
 # export FTP_PROXY="http://10.10.10.100:7890/"
 # export NO_PROXY="127.0.0.1,localhost,192.168.3.1/24,192.168.1.1/24"
 
-alias ll="ls -alh"
-alias gs="git status"
-alias df="df -h"
 
